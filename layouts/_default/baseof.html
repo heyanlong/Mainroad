@@ -24,6 +24,9 @@
 	{{- if not .Site.IsServer }}
 		{{ template "_internal/google_analytics_async.html" . }}
 	{{- end }}
+	{{- if not .Site.IsServer }}
+		<script data-ad-client="ca-pub-4136853851848129" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	{{- end }}
 </head>
 <body class="body">
 	<div class="container container--outer">
